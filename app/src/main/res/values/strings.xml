@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DownloadingImage</string>
+    <string name="nao_encontrada">Imagem não encontrada</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margem"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/srcTextLink"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/imgButtonClick"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@android:drawable/ic_menu_upload" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margem"
+        >
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            />
+
+        <ProgressBar
+            android:id="@+id/pgbProgresso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            style="@style/Widget.AppCompat.ActionButton.CloseMode"
+            android:visibility="invisible"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/txtNaoEncontrada"
+            android:layout_width="match_parent"
+            android:textSize="45dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nao_encontrada"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:gravity="center"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>
